@@ -15,8 +15,7 @@ public class Mul extends ArithmeticInstruction {
 	protected void op(Memory memory) {
 		// TODO Auto-generated method stub
 		
-		op1.getWord(memory).mul(op2.getWord(memory));
-	
+		address.getWord(memory).add(op1.getWord(memory).add(op2.getWord(memory)));
 	}
 
 	@Override

@@ -9,5 +9,4 @@ public abstract class Memory {
 		
 		return wordList[index];
 	}
-	
 }

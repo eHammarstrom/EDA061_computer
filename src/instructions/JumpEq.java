@@ -4,8 +4,8 @@ import computer.*;
 import program.ProgramCounter;
 
 public class JumpEq extends Jump {
-	Operand op1;
-	Operand op2;
+	private Operand op1;
+	private Operand op2;
 
 	public JumpEq(int nbr, Operand op1, Operand op2) {
 		// TODO Auto-generated constructor stub
@@ -15,8 +15,10 @@ public class JumpEq extends Jump {
 	}
 
 	public void execute(ProgramCounter c, Memory m) {
-		if (op1.equals(op2)) {
+		if (op1.getWord(m).equals(op2.getWord(m))) {
 			super.execute(c, m);
+		} else {
+			c.increment();
 		}
 	}
 	

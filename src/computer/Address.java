@@ -10,11 +10,9 @@ public class Address implements Operand {
 
 	public Word getWord(Memory m) {
 		return m.getWord(index);
-
 	}
 
 	public String toString() {
 		return "[" + Integer.toString(index) + "]";
 	}
-
 }

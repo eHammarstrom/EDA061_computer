@@ -16,10 +16,11 @@ public class Program {
 
 	public void execute(Memory mem) {
 		while (pc.isPositive()) {
+			System.out.println(pc.getIndex());
 			instructionList.get(pc.getIndex()).execute(pc, mem);
 		}
 		
-		System.out.println(mem.getWord(1));
+//		System.out.println(mem.getWord(1));
 	}
 
 	public void add(Instruction in) {

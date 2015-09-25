@@ -2,9 +2,9 @@ package computer;
 
 public interface Word extends Operand{
 	
-	public void add(Word w);
+	public Word add(Word w);
 	
-	public void mul(Word w);
+	public Word mul(Word w);
 	
 	public void copy(Word w);
 	
@@ -12,6 +12,6 @@ public interface Word extends Operand{
 	
 	public String toString();
 	
-//	public void setNumber(Number n);
+	public boolean equals(Word w);
 
 }

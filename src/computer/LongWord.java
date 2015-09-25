@@ -8,14 +8,15 @@ public class LongWord implements Word {
 	}
 
 	@Override
-	public void add(Word w) {
+	public Word add(Word w) {
 		data += ((LongWord) w).data;
+		return this;
 	}
 
 	@Override
-	public void mul(Word w) {
-		// TODO Auto-generated method stub
+	public Word mul(Word w) {
 		data *= ((LongWord) w).data;
+		return this;
 	}
 
 	@Override
@@ -30,26 +31,21 @@ public class LongWord implements Word {
 		return data;
 	}
 
-	public boolean equals(LongWord w) {
-		if (w instanceof LongWord && data == ((LongWord) w).data)
-			return true;
-		return false;
-	}
-
 	@Override
 	public Word getWord(Memory m) {
 		// TODO Auto-generated method stub
-		return this;
+		return (LongWord) this;
 	}
 	
 	@Override
 	public String toString() {
 		return Long.toString(data);
 	}
-
-//	@Override
-//	public void setNumber(Number n) {
-//		// TODO Auto-generated method stub
-//		data=(long) n;
-//	}
+	
+	@Override
+	public boolean equals(Word w) {
+		if (data == ((LongWord) w).data)
+			return true;
+		return false;
+	}
 }
