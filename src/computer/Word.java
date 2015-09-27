@@ -8,8 +8,6 @@ public interface Word extends Operand{
 	
 	public void copy(Word w);
 	
-	public Number getData();
-	
 	public String toString();
 	
 	public boolean equals(Word w);

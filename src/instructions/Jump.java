@@ -12,7 +12,6 @@ public class Jump implements Instruction {
 
 	@Override
 	public void execute(ProgramCounter c, Memory m) {
-		// TODO Auto-generated method stub
 		c.setIndex(nbr);
 	}
 

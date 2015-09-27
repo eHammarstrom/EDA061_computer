@@ -21,20 +21,12 @@ public class LongWord implements Word {
 
 	@Override
 	public void copy(Word w) {
-		// TODO Auto-generated method stub
 		data = ((LongWord) w).data;
 	}
 
 	@Override
-	public Number getData() {
-		// TODO Auto-generated method stub
-		return data;
-	}
-
-	@Override
 	public Word getWord(Memory m) {
-		// TODO Auto-generated method stub
-		return (LongWord) this;
+		return this;
 	}
 	
 	@Override

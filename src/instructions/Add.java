@@ -1,6 +1,5 @@
 package instructions;
 import computer.Operand;
-import computer.Word;
 import computer.Address;
 import computer.Memory;
 
@@ -12,11 +11,8 @@ public class Add extends ArithmeticInstruction {
 
 	@Override
 	protected void op(Memory memory) {
-		// TODO Auto-generated method stub
-		// tv� nummer m�ste kunna adderas, hur?
-		Word asd = op1.getWord(memory).add(op2.getWord(memory));
-		
-		address.getWord(memory).add(asd);
+		address.getWord(memory).copy(
+				op1.getWord(memory).add(op2.getWord(memory)));
 	}
 	
 	@Override

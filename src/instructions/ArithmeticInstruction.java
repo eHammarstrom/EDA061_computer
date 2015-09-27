@@ -6,9 +6,6 @@ import computer.Operand;
 import program.ProgramCounter;
 
 public abstract class ArithmeticInstruction implements Instruction {
-	
-//	private Memory mem;
-	
 	protected Address address;
 	protected Operand op1, op2;
 	
@@ -20,14 +17,9 @@ public abstract class ArithmeticInstruction implements Instruction {
 	
 	@Override
 	public void execute(ProgramCounter c, Memory m) {
-		
+		op(m);
 		c.increment();
-		
 	}
 	
 	protected abstract void op(Memory memory);
-	
-//	public String toString() {
-//		return op1.getWord(mem).getData().toString() + " Mul/Add " + op2.getWord(mem).getData().toString();
-//	}
 }

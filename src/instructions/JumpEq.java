@@ -8,7 +8,6 @@ public class JumpEq extends Jump {
 	private Operand op2;
 
 	public JumpEq(int nbr, Operand op1, Operand op2) {
-		// TODO Auto-generated constructor stub
 		super(nbr);
 		this.op1 = op1;
 		this.op2 = op2;
