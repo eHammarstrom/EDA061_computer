@@ -5,7 +5,7 @@ import computer.Operand;
 import program.ProgramCounter;
 
 public class Print implements Instruction {
-	Operand op;
+	private Operand op;
 
 	public Print(Operand op) {
 		this.op = op;

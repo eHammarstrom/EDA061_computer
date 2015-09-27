@@ -4,7 +4,7 @@ import computer.Memory;
 import program.ProgramCounter;
 
 public class Jump implements Instruction {
-	int nbr;
+	protected int nbr;
 
 	public Jump(int nbr) {
 		this.nbr = nbr;

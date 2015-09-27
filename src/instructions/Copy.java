@@ -6,7 +6,7 @@ import computer.Operand;
 import program.ProgramCounter;
 
 public class Copy implements Instruction {
-	Operand op, addr;
+	private Operand op, addr;
 
 	public Copy(Operand op, Address addr) {
 		this.op = op;
