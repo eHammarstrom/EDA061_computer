@@ -1,6 +1,6 @@
 package instructions;
 import computer.Memory;
-import program.ProgramCounter;
+import computer.ProgramCounter;
 
 public interface Instruction {
 

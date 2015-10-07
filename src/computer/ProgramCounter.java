@@ -1,4 +1,4 @@
-package program;
+package computer;
 
 public class ProgramCounter {
 	private int index;
@@ -20,6 +20,7 @@ public class ProgramCounter {
 	public void increment(){
 		index++;
 	}
+	
 	public void setIndex(int nbr){
 		index = nbr;
 	}

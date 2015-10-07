@@ -3,7 +3,7 @@ package instructions;
 import computer.Address;
 import computer.Memory;
 import computer.Operand;
-import program.ProgramCounter;
+import computer.ProgramCounter;
 
 public class Copy implements Instruction {
 	private Operand op, addr;

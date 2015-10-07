@@ -1,7 +1,7 @@
 package instructions;
 
 import computer.Memory;
-import program.ProgramCounter;
+import computer.ProgramCounter;
 
 public class Halt implements Instruction {
 

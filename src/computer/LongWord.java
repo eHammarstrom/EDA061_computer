@@ -9,14 +9,13 @@ public class LongWord implements Word {
 
 	@Override
 	public Word add(Word w) {
-		data += ((LongWord) w).data;
-		return this;
+		return new LongWord(data + ((LongWord) w). data);
 	}
 
 	@Override
-	public Word mul(Word w) {
-		data *= ((LongWord) w).data;
-		return this;
+	public Word mul(Word w) {			
+		return new LongWord(data * ((LongWord) w).data);
+
 	}
 
 	@Override

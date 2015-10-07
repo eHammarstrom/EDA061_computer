@@ -1,7 +1,6 @@
 package instructions;
 
 import computer.*;
-import program.ProgramCounter;
 
 public class JumpEq extends Jump {
 	private Operand op1;

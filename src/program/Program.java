@@ -3,21 +3,18 @@ package program;
 import java.util.ArrayList;
 
 import computer.Memory;
+import computer.ProgramCounter;
 import instructions.Instruction;
 
 public class Program {
 	private ArrayList<Instruction> instructionList;
-	private ProgramCounter pc;
 
 	public Program() {
 		instructionList = new ArrayList<Instruction>();
-		pc = new ProgramCounter();
 	}
-
-	public void execute(Memory mem) {
-		while (pc.isPositive()) {
-			instructionList.get(pc.getIndex()).execute(pc, mem);
-		}
+	
+	public ArrayList<Instruction> getInstructionList(){
+		return instructionList;
 	}
 
 	public void add(Instruction in) {

@@ -3,7 +3,7 @@ package instructions;
 import computer.Memory;
 import computer.Address;
 import computer.Operand;
-import program.ProgramCounter;
+import computer.ProgramCounter;
 
 public abstract class ArithmeticInstruction implements Instruction {
 	protected Address address;
