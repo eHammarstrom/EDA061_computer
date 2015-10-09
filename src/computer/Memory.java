@@ -5,7 +5,7 @@ public abstract class Memory {
 	
 	public Word getWord(int index) throws NullPointerException {
 		if (index < 0 || index > wordList.length)
-			throw new NullPointerException("NullPointer");
+			throw new NullPointerException("NullPointerException");
 		
 		return wordList[index];
 	}

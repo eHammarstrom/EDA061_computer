@@ -10,6 +10,8 @@ public interface Word extends Operand{
 	
 	public String toString();
 	
+	public Word getWord(Memory m);
+	
 	public boolean equals(Word w);
 
 }
